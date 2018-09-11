@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "2payrollUpdateProductVersion",
+  "type": "object",
+  "properties": {
+    "productVersion": {
+      "type": "string",
+      "description": "the product version",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "propertyName": {
+      "type": "string",
+      "description": "the property name of the environment class",
+      "$default": {
+        "$source": "propertyName"
+      }
+    },
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to the environment folder.",
+      "visible": false
+    }
+  },
+  "required": [
+    "productVersion"
+  ]
+}

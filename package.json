@@ -1,0 +1,27 @@
+{
+  "name": "@dvabuzyarov/product-version",
+  "version": "0.0.0",
+  "description": "Updates production version in the environment files",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine **/*.spec.js",
+    "version": "rm package-lock.json && conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "dvabuzyarov(at)gmail.com",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^0.8.1",
+    "@angular-devkit/schematics": "^0.8.1",
+    "typescript": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.6.0",
+    "@types/node": "^8.10.29",
+    "jasmine": "^2.8.0",
+    "conventional-changelog-cli": "^2.0.1"
+  }
+}

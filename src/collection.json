@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "product-version": {
+      "description": "Updates production version in the environment files",
+      "factory": "./product-version/",
+      "schema": "./product-version/schema.json"
+    }
+  }
+}
+

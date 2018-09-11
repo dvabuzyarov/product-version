@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+- stable
+sudo: false
+cache:
+  directories:
+  - node_modules
+git:
+  depth: 1
+before_script:
+- npm i -g typescript@2.7.2
+install:
+- npm install
+script:
+- npm run build
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: dvabuzyarov@gmail.com
+  api_key:
+    secure: n/CxBO0Vu60l20ENiR5hPcUCgGOOaGZlvsGOEnUmUQNyuUymco8zaXBuQ0L1RKgCXK/ixyuffHL14dOS5A3DSstRT9Ja0cnDtGUpKfCkdg8RtPgHyEwuRNf3KJrx0jnJcVTq5qYQ1VkStg5Hq7KUmHwyEaPp1OABSx+LvcIiVanPr8ofTOPEHDCoRbZsL7fwDITFArOYNbQQO+zAWRWKd66UzUUJNrYr2OlfGDooCIhV4Hn5FT64Br7c19CUYdxh7oDgA7gMRIa0KRXNwFt/z29ZZNr/jTOjquZTJS03w29fR8q3bncaCJsO6dXIAgngsxEpW3lvbQedUiuIN6gza6VFxz0dfbBoKesZmAU8OgZg02GtWVe6bZaPCX7p3vL32A7XCY54dvL06xWji1eA3gczy7AOl2z0c8H7ONp+uCN57sKuGQaGtIgIx6Br+r3vdf/lHAWghPY9kvL8adUVlaQPCVLTLZ+nMRNK031kt2iF49bp1Kl69TAvOJvfK7AKMfJrQpflioLSoaoTmFQQTfYgFkXV1oTF471E0Q/pL+CV4M6lsWIIT0cGGdCm9TL/84xeNpN5RYM2zfOMI/J6qYDk4hrw0w2XjcJ34BEc7sKpiRF0NplhNwux4U+FjSKmjURvEMFinzU1feaMXF4abmuhmSYrrqFxx+pRTShQxHo=
+  on:
+    tags: true
+    repo: dvabuzyarov/product-version

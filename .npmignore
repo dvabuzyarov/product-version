@@ -1,0 +1,12 @@
+# Ignores TypeScript files, but keeps definitions and templates.
+*.ts
+!*.d.ts
+
+.idea/*
+.travis.yml
+**/*.tgz
+*.spec.js
+*.js.map
+tsconfig.json
+
+!src/**/_*files/**/*
