@@ -8,5 +8,6 @@
 *.spec.js
 *.js.map
 tsconfig.json
+package-lock.json
 
 !src/**/_*files/**/*

@@ -1,11 +1,11 @@
 {
   "name": "@dvabuzyarov/product-version",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Updates production version in the environment files",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine **/*.spec.js",
-    "version": "rm package-lock.json && conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "keywords": [
     "schematics"
