@@ -7,6 +7,9 @@
     "test": "npm run build && jasmine **/*.spec.js",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "schematics"
   ],
