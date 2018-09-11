@@ -7,8 +7,6 @@ cache:
   - node_modules
 git:
   depth: 1
-before_script:
-- npm i -g typescript@2.7.2
 install:
 - npm install
 script:
