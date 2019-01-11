@@ -1,3 +1,7 @@
+## [1.0.5-rc.0](https://github.com/dvabuzyarov/product-version/compare/v1.0.4...v1.0.5-rc.0) (2019-01-11)
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/dvabuzyarov/product-version/compare/v1.0.3...v1.0.4) (2018-09-11)
 
