@@ -4,7 +4,7 @@ import { getUpdateChange } from "./get-update-change";
 import { ISchema } from "./schema";
 import { setupOptions } from "./setup-options";
 
-export default function(options: ISchema): Rule {
+export function set (options: ISchema): Rule {
     return (host: Tree, context: SchematicContext) => {
         context.logger.info("Product Version: " + JSON.stringify(options));
         setupOptions(options, host);
