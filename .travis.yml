@@ -4,7 +4,7 @@ node_js:
 sudo: false
 cache:
   directories:
-  - node_modules
+    - "$HOME/.npm"
 git:
   depth: 1
 install:
