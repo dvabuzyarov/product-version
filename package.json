@@ -33,7 +33,7 @@
     "semantic-release": "17.0.4"
   },
   "release": {
-    "pkgRoot": "dist/ng-grpc"
+    "pkgRoot": "/"
   },
   "config": {
     "commitizen": {
