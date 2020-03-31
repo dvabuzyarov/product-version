@@ -7,7 +7,8 @@
     "test": "npm run build && jasmine **/*.spec.js",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "commit": "git-cz",
-    "commit-retry": "git cz --retry"
+    "commit-retry": "git cz --retry",
+    "semantic-release": "semantic-release"
   },
   "publishConfig": {
     "access": "public"
