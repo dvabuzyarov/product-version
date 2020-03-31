@@ -2,7 +2,7 @@
 [![NPM version](https://img.shields.io/npm/v/@dvabuzyarov/product-version.svg?style=flat-square)](https://www.npmjs.com/package/@dvabuzyarov/product-version)
 [![npm downloads](https://img.shields.io/npm/dt/@dvabuzyarov/product-version.svg?style=flat-square)](https://www.npmjs.com/package/@dvabuzyarov/product-version)
 [![Dependency Status](https://img.shields.io/david/dvabuzyarov/product-version.svg?style=flat-square)](https://david-dm.org/dvabuzyarov/product-version)
-[![License](https://img.shields.io/hexpm/l/plug.svg)](https://www.npmjs.com/package/@dvabuzyarov/product-version)
+![GitHub](https://img.shields.io/github/license/dvabuzyarov/product-version)
 
 This angular schematic is designed to be a build pipeline action that updates product version.
 It looks for version property in environment.ts file.

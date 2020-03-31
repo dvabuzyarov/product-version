@@ -2,7 +2,7 @@
   "name": "@dvabuzyarov/product-version",
   "version": "",
   "scripts": {
-    "build": "tsc -p tsconfig.json && cpx ./src/package.json ./dist/",
+    "build": "tsc -p tsconfig.json && cpx ./src/package.json ./dist/ && cpx README.md ./dist/",
     "test": "npm run build && jasmine **/*.spec.js",
     "commit": "git-cz",
     "commit-retry": "git cz --retry",
