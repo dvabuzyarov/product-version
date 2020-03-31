@@ -1,23 +1,14 @@
 {
   "name": "@dvabuzyarov/product-version",
-  "version": "1.0.5-rc.0",
-  "description": "Updates production version in the environment files",
+  "version": "",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && cpx ./src/package.json ./dist/",
     "test": "npm run build && jasmine **/*.spec.js",
     "commit": "git-cz",
     "commit-retry": "git cz --retry",
     "semantic-release": "semantic-release"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "keywords": [
-    "schematics"
-  ],
-  "author": "dvabuzyarov(at)gmail.com",
-  "license": "MIT",
-  "schematics": "./src/collection.json",
+  "private": true,
   "dependencies": {
     "@angular-devkit/core": "^9.1.0",
     "@angular-devkit/schematics": "^9.1.0",
@@ -30,10 +21,11 @@
     "conventional-changelog-cli": "^2.0.11",
     "cz-conventional-changelog": "3.1.0",
     "husky": "4.2.3",
-    "semantic-release": "17.0.4"
+    "semantic-release": "17.0.4",
+    "cpx": "1.5.0"
   },
   "release": {
-    "pkgRoot": "/"
+    "pkgRoot": "dist"
   },
   "config": {
     "commitizen": {
