@@ -2,7 +2,8 @@
   "name": "@dvabuzyarov/product-version",
   "version": "",
   "scripts": {
-    "build": "tsc -p tsconfig.json && cpx ./src/package.json ./dist/ && cpx README.md ./dist/",
+    "build": "tsc -p tsconfig.json",
+    "postbuild": "copyfiles -u 1 ./src/*.json ./dist/ && copyfiles -u 1 ./src/**/*.json ./dist/ && copyfiles README.md ./dist/",
     "test": "npm run build && jasmine **/*.spec.js",
     "commit": "git-cz",
     "commit-retry": "git cz --retry",
@@ -15,14 +16,14 @@
     "typescript": "~3.8.2"
   },
   "devDependencies": {
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
-    "jasmine": "^3.5.0",
+    "@types/node": "^12.11.1",
     "conventional-changelog-cli": "^2.0.11",
     "cz-conventional-changelog": "3.1.0",
     "husky": "4.2.3",
+    "jasmine": "^3.5.0",
     "semantic-release": "17.0.4",
-    "cpx": "1.5.0"
+    "copyfiles": "2.2.0"
   },
   "release": {
     "pkgRoot": "dist"
