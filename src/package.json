@@ -1,0 +1,30 @@
+{
+  "name": "@dvabuzyarov/product-version",
+  "version": "0.0.0-semantically-released",
+  "description": "Updates production version in the environment files",
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "keywords": [
+    "schematics",
+    "angular",
+    "product-version"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvabuzyarov/product-version"
+  },
+  "bugs": {
+    "url": "https://github.com/dvabuzyarov/product-version/issues"
+  },
+  "main": "product-version/index.js",
+  "author": "dvabuzyarov(at)gmail.com",
+  "license": "MIT",
+  "schematics": "./collection.json",
+  "peerDependencies": {
+    "@angular-devkit/core": "^9.1.0",
+    "@angular-devkit/schematics": "^9.1.0",
+    "typescript": "~3.8.2"
+  }
+}

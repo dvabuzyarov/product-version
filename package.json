@@ -1,30 +1,45 @@
 {
   "name": "@dvabuzyarov/product-version",
-  "version": "1.0.5-rc.0",
-  "description": "Updates production version in the environment files",
+  "version": "",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && cpx ./src/package.json ./dist/ && cpx README.md ./dist/",
     "test": "npm run build && jasmine **/*.spec.js",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+    "commit": "git-cz",
+    "commit-retry": "git cz --retry",
+    "semantic-release": "semantic-release"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "keywords": [
-    "schematics"
-  ],
-  "author": "dvabuzyarov(at)gmail.com",
-  "license": "MIT",
-  "schematics": "./src/collection.json",
+  "private": true,
   "dependencies": {
-    "@angular-devkit/core": "^7.2.1",
-    "@angular-devkit/schematics": "^7.2.1",
-    "typescript": "^3.0.3"
+    "@angular-devkit/core": "^9.1.0",
+    "@angular-devkit/schematics": "^9.1.0",
+    "typescript": "~3.8.2"
   },
   "devDependencies": {
-    "@types/jasmine": "^3.3.5",
-    "@types/node": "^10.12.18",
-    "jasmine": "^3.3.1",
-    "conventional-changelog-cli": "^2.0.11"
+    "@types/node": "^12.11.1",
+    "@types/jasmine": "~3.5.0",
+    "jasmine": "^3.5.0",
+    "conventional-changelog-cli": "^2.0.11",
+    "cz-conventional-changelog": "3.1.0",
+    "husky": "4.2.3",
+    "semantic-release": "17.0.4",
+    "cpx": "1.5.0"
+  },
+  "release": {
+    "pkgRoot": "dist"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint --edit"
+    }
   }
 }
