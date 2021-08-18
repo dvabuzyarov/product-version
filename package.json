@@ -16,7 +16,7 @@
     "typescript": "*"
   },
   "devDependencies": {
-    "@types/jasmine": "3.5.11",
+    "@types/jasmine": "3.8.2",
     "@types/node": "12.12.47",
     "conventional-changelog-cli": "2.0.34",
     "cz-conventional-changelog": "3.2.0",
