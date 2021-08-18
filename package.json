@@ -23,7 +23,7 @@
     "@commitlint/cli": "9.0.1",
     "@commitlint/config-conventional": "10.0.0",
     "husky": "4.2.5",
-    "jasmine": "^3.5.0",
+    "jasmine": "3.5.0",
     "semantic-release": "17.2.3",
     "copyfiles": "2.3.0"
   },
