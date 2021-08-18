@@ -28,6 +28,15 @@
     "copyfiles": "2.3.0"
   },
   "release": {
+    "branches": [
+      {
+        "name": "master"
+      },
+      {
+        "name": "dev",
+        "channel": "next"
+      }
+    ],
     "pkgRoot": "dist"
   },
   "config": {
