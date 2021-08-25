@@ -24,7 +24,7 @@
     "@commitlint/config-conventional": "13.1.0",
     "husky": "7.0.2",
     "jasmine": "3.9.0",
-    "semantic-release": "17.4.6",
+    "semantic-release": "17.4.7",
     "copyfiles": "2.4.1"
   },
   "release": {
