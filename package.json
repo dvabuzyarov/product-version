@@ -22,7 +22,7 @@
     "cz-conventional-changelog": "3.3.0",
     "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
-    "husky": "7.0.2",
+    "husky": "7.0.4",
     "jasmine": "3.10.0",
     "semantic-release": "17.4.7",
     "copyfiles": "2.4.1"
