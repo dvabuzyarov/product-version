@@ -6,8 +6,9 @@ import { getWorkspace } from "../utils/config";
 export async function setupOptions(options: ISchema, host: Tree) {
     const workspace = await getWorkspace(host);
     if (!options.project) {
-        options.project = Object.keys(workspace.projects)[0];
+        options.project = Array.from(workspace.projects.keys())[0];
     }
+
     const project = workspace.projects.get(options.project);
 
     if (options.path === undefined) {
