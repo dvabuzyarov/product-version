@@ -23,8 +23,8 @@
   "license": "MIT",
   "schematics": "./collection.json",
   "peerDependencies": {
-    "@angular-devkit/core": "^10.0.0",
-    "@angular-devkit/schematics": "^10.0.0",
-    "typescript": "~3.9.5"
+    "@angular-devkit/core": "*",
+    "@angular-devkit/schematics": "*",
+    "typescript": "*"
   }
 }

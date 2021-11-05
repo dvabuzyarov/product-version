@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "id": "@dvabuzyarov/product-version",
+  "$id": "@dvabuzyarov/product-version",
   "type": "object",
   "properties": {
     "productVersion": {
