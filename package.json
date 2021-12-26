@@ -17,8 +17,8 @@
     "typescript": "4.5.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "13.1.0",
-    "@commitlint/config-conventional": "13.1.0",
+    "@commitlint/cli": "16.0.0",
+    "@commitlint/config-conventional": "16.0.0",
     "@types/jasmine": "3.10.2",
     "@types/node": "16.11.17",
     "conventional-changelog-cli": "2.0.34",
