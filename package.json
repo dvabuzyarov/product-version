@@ -20,7 +20,7 @@
     "@commitlint/cli": "17.0.3",
     "@commitlint/config-conventional": "17.0.3",
     "@types/jasmine": "4.0.3",
-    "@types/node": "16.11.42",
+    "@types/node": "16.11.43",
     "conventional-changelog-cli": "2.0.34",
     "copyfiles": "2.4.1",
     "cz-conventional-changelog": "3.3.0",
