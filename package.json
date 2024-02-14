@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "18.6.1",
-    "@commitlint/config-conventional": "18.6.1",
+    "@commitlint/config-conventional": "18.6.2",
     "@types/jasmine": "4.6.4",
     "@types/node": "20.11.17",
     "conventional-changelog-cli": "4.1.0",
