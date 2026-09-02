@@ -12,8 +12,8 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-devkit/core": "13.3.11",
-    "@angular-devkit/schematics": "13.3.11",
+    "@angular-devkit/core": "22.1.7",
+    "@angular-devkit/schematics": "22.1.7",
     "typescript": "4.9.5"
   },
   "devDependencies": {
